@@ -38,7 +38,7 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="sticky" sx={{border:' 4px dotted blue' , background: 'green', Position: "fixed", color: 'white'}} >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -77,6 +77,7 @@ const Navbar = () => {
               anchorOrigin={{
                 vertical: 'bottom',
                 horizontal: 'left',
+                color: 'white'
               }}
               keepMounted
               transformOrigin={{
@@ -109,7 +110,8 @@ const Navbar = () => {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              
+              color: 'white',
               textDecoration: 'none',
             }}
 
@@ -117,13 +119,13 @@ const Navbar = () => {
             Husnain
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+            {pages.map((page,i) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                <Link to={`/${page}`}>{page}</Link>
+                <Link to={ pages[0]=== page ?  '/' : `/${page.toLowerCase()}` }>{page}</Link>
               </Button>
             ))}
           </Box>

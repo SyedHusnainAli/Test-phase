@@ -1,15 +1,22 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import '../styles/Home.css';
 
 
 function Contact(){
 
     return(
         <div>
-          <li>
-              <Link to={"/contact"} >contact</Link>
-         </li>
-                    <h1>contact</h1>
+            <div className="header">
+                <div className="text-home">
+                <h1>We help startups launch thier <br /> products </h1>
+                <h2>remove one word from your life that is <span>tomorrow</span>
+                <br /> whatever you have to do, do it on the spot and  <br /> with <span>consistency!</span>
+                </h2>
+                </div>
+
+                </div>  
+
+                    
         </div>
     )
 }
