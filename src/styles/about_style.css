@@ -1,0 +1,11 @@
+
+.about_container{
+    height: 90vh;
+    background-color: blue;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 400px;
+    
+}

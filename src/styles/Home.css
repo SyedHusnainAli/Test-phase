@@ -14,7 +14,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-margin-bottom: 500px;
   }
 
   .text-home h1{
@@ -29,4 +28,15 @@ margin-bottom: 500px;
     font-weight: bold;
     text-shadow: 2px 3px 4px #000000;
    padding-top: 4%;
+  }
+
+  .footer{
+    padding: 150px;
+    color: aliceblue;
+      font-family: sans-serif;
+  font-weight:400;
+  font-size:20px;
+display: flex;
+justify-content: center;
+align-items: center;
   }

@@ -1,6 +1,6 @@
 import React from "react";
 import '../styles/Home.css';
-
+import Typewriter from "typewriter-effect"
 
 function Contact(){
 
@@ -14,9 +14,26 @@ function Contact(){
                 </h2>
                 </div>
 
-                </div>  
+                <div className="footer">
+   <Typewriter
+            
+            onInit={(typewriter)=> {
 
-                    
+            typewriter
+            
+            .typeString("About - Stack Exchange")
+                
+            .pauseFor(-500)
+            .deleteAll()
+            .typeString(" Stack Overflow and the Stack Exchange network help people find the answers they need, when they need them. Comprising 173 Q&A communities, including Stack Overflow, over 100 million people visit every month to ask questions, learn, and share technical knowledge. Our products and tools empowe people to find what they need to develop technology at work or at home. ")
+            .start();
+            }}
+            />
+
+
+            </div>
+
+</div>             
         </div>
     )
 }
