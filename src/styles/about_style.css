@@ -1,11 +1,25 @@
 
 .about_container{
     height: 90vh;
-    background-color: blue;
+    color: black;
+    font-size: 15px;
+   background-image: url('./about-main.webp');
+   background-repeat: no-repeat;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 400px;
+   
+  
+     padding-top: 400px; 
+    background-size: 100% 100vh;
+}
+
+.message{
+    
+      position: absolute;
+      top: 130px;
+       
+        right: 30px;
     
 }
