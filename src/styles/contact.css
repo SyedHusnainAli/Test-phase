@@ -1,11 +1,20 @@
 .main-contact{
    width: 100%;
-   height: 100vh;
-
+   height: calc(100vh - 78px);
+   position: relative;
    background-image:url('./contact2.jpg');
    background-repeat: no-repeat;
    background-size: cover;
    background-blend-mode: normal;  
+}
+.layout {
+   z-index: 1;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   left: 0%;
+   top: 0%;
+   background-color: #00000070;
 }
 
 .main-contact{
@@ -13,10 +22,11 @@
    display: inline-table;
    justify-content: center;
 align-items: center;
-padding-top: 300px;
+padding-top: 350px;
 }
 
 .touch{
+   z-index: 12 !important;
    font-size: 35px;
    color: rgb(51, 45, 57);
    letter-spacing: 2px;
@@ -34,3 +44,53 @@ padding-top: 300px;
    font-weight: 400;
    text-shadow: 1px 1px black;
 }
+
+
+.styleForm{
+   z-index: 12 !important;
+   color: black;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.form-1{
+   display: flex;
+   flex-direction: column;
+}
+.form-2{
+   display: flex;
+   flex-direction: column;
+}
+.Names{
+   color: black;
+   height: 50px;
+   margin: 20px;
+   width: 300px;
+}
+
+.comit{
+   box-shadow: 5px blue;
+   height: 230px;
+   width: 300px;
+}
+
+.btn{
+   background-color: #4CAF50; /* Green */
+   border: none;
+   color: white;
+   padding: 16px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   transition-duration: 0.4s;
+   cursor: pointer;
+   z-index: 123 !important;
+}
+
+
+.btn:hover {
+   background-color: #008CBA;
+   color: white;
+ }
